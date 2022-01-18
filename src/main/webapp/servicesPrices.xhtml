@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:adm="http://github.com/adminfaces"
+                template="#{layoutMB.template}">
+
+    <script type="module">
+        import { Toast } from 'bootstrap.esm.min.js'
+
+        Array.from(document.querySelectorAll('.toast'))
+            .forEach(toastNode => new Toast(toastNode))
+    </script>
+
+    <ui:define name="head-end">
+        <ui:param name="renderBreadCrumb" value="false"/>
+    </ui:define>
+
+    <div class="wrapper">
+        <h2>Simple Responsive CSS Grid Layout Tables. <br/>Equal Heights  Reversing order on mobile</h2><br/>
+        <div class="row">
+            <div class="pricing-table">
+                <div class="pricing-box">
+                    <h2>Free Membership</h2>
+                    <span class="price">Free Lifetime</span>
+                    <p class="description">Best For Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    <span class="pricing-table-divider"></span>
+                    <a class="btn" href="#"><b>Sign Up</b></a>
+                    <span class="pricing-table-divider"></span>
+                    <ul>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                    </ul>
+                </div>
+                <div class="pricing-box">
+                    <h2>Basic Membership</h2>
+                    <span class="price">$50/year</span>
+                    <p class="description">Best For Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    <span class="pricing-table-divider"></span>
+                    <a class="btn" href="#"><b>Sign Up</b></a>
+                    <span class="pricing-table-divider"></span>
+                    <ul>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                    </ul>
+                </div>
+                <div class="pricing-box pricing-table-best">
+                    <h2>Advanced Membership</h2>
+                    <span class="price">$100/year</span>
+                    <p class="description">Best For Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    <span class="pricing-table-divider"></span>
+                    <a class="btn" href="#"><b>Sign Up</b></a>
+                    <span class="pricing-table-divider"></span>
+                    <ul>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                        <li>Lorem Ipsum is simply dummy text</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</ui:composition>

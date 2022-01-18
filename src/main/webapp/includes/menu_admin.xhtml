@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui" xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ul class="sidebar-menu tree" data-widget="tree">
+        <li>
+            <p:link outcome="/index" onclick="clearBreadCrumbs()">
+                <i class="fa fa-home"></i>
+                <span>Home</span>
+            </p:link>
+        </li>
+        <li class="header">
+            General
+        </li>
+        <li>
+            <p:link outcome="/ntpprocess">
+                <i class="fa fa-clock-o"></i>
+                <span>NTP SERVICE</span>
+            </p:link>
+
+            <p:link outcome="/car-list">
+                <i class="fa fa-clock-o"></i>
+                <span>NTP Ucret Tanım</span>
+            </p:link>
+
+<!--            <p:link outcome="/car-list">-->
+<!--                <i class="fa fa-clock-o"></i>-->
+<!--                <span>NTP User Tanım</span>-->
+<!--            </p:link>-->
+
+
+            <p:link outcome="/user-list">
+                <i class="fa fa-clock-o"></i>
+                <span>NTP User List</span>
+            </p:link>
+
+
+            <p:link outcome="/machine-list">
+                <i class="fa fa-clock-o"></i>
+                <span>NTP Machine List</span>
+            </p:link>
+
+
+            <p:link outcome="/service-list">
+                <i class="fa fa-clock-o"></i>
+                <span>NTP Service List</span>
+            </p:link>
+
+        </li>
+
+    </ul>
+
+</ui:composition>

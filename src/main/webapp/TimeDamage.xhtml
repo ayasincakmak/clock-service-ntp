@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:adm="http://github.com/adminfaces"
+                template="#{layoutMB.template}">
+<script type="module">
+    import { Toast } from 'bootstrap.esm.min.js'
+
+    Array.from(document.querySelectorAll('.toast'))
+        .forEach(toastNode => new Toast(toastNode))
+</script>
+
+    <ui:define name="title">
+    <h2 class="align-center">
+        <span class="text-aqua"> <i><a
+            target="_blank"
+            style="text-transform: none;text-decoration: none">How Inaccurate Time Damages Your Business?</a></i></span>
+        <br/>
+
+    </h2>
+    </ui:define>
+
+
+</ui:composition>

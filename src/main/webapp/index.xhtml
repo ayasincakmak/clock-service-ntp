@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="#{layoutMB.template}">
+
+    <script type="module">
+        import { Toast } from 'bootstrap.esm.min.js'
+
+        Array.from(document.querySelectorAll('.toast'))
+            .forEach(toastNode => new Toast(toastNode))
+    </script>
+
+    <ui:define name="head-end">
+        <ui:param name="renderBreadCrumb" value="false"/>
+    </ui:define>
+
+    <ui:define name="title">
+        <h2 class="align-center">
+            Welcome to the <span class="text-aqua"> <i><a
+                target="_blank"
+                style="text-transform: none;text-decoration: none">Clock Distribution Service</a></i></span> Project!
+            <br/>
+
+        </h2>
+
+
+        <div class="card-group">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+
+                    <div class="card">
+                        <img src="https://static.bodet-time.com/images/stories/EN/time-server/articles/inherent-flaws-time-synchronisation-s.jpg" class="card-img-top" alt="..."/>
+                        <div class="card-body">
+                            <h5 class="card-title">What is Network Time Protocol?</h5>
+                            <p class="card-text">NTP (Network Time Protocol) is a networking protocol which synchronizes clocks
+                                in computers and other electronic devices,
+                                either over the internet or local networks.
+                            </p>
+                            <a href="WhatIsNTP.xhtml" class="btn btn-primary">Read more</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column">
+
+                    <div class="card">
+                        <img src="https://static.bodet-time.com/images/stories/EN/time-server/articles/network-time-protocol-s.jpg" class="card-img-top" alt="..."/>
+                        <div class="card-body">
+                            <h5 class="card-title">How Inaccurate Time Damages Your Business?</h5>
+                            <p class="card-text">
+                                It’s approaching the end of another day, and as the clock on the office wall shows 5pm, your staff pack up and leave.
+                                However, what if that clock isn’t accurate? As your employees go out the door, you notice that your computer clock shows 4.55pm,
+                                which is actually the correct time. Someone leaving five minutes early doesn’t seem like an important matter.
+                                However, this lost time soon adds up when you start to consider a few basic factors.
+                            </p>
+                            <a href="TimeDamage.xhtml" class="btn btn-primary">Read more</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column">
+
+                    <div class="card">
+                        <img src="https://static.bodet-time.com/images/stories/EN/time-server/articles/inaccurate-time-s.jpg" class="card-img-top" alt="..."/>
+                        <div class="card-body">
+                            <h5 class="card-title">Maintaining Security with NTP Synchronization</h5>
+                            <p class="card-text">
+                                Distributing accurate time is a vital part of sustaining network infrastructure.
+                                It’s also a critical element of network security,
+                                both when it comes to the expiry dates on certificates and timestamped system logs used for troubleshooting.
+                            </p>
+                            <a href="MaintainSecurity.xhtml" class="btn btn-primary">Read more</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </ui:define>
+</ui:composition>
+
+
+
+
+
+
